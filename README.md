@@ -1,2 +1,2 @@
 # Html-css
-Simple practise for Html css
+Simple practise for Html and css
