@@ -1,0 +1,26 @@
+div
+{
+    display: inline-block;
+    outline-color: #000;
+    outline-width: 5px;
+    outline-style: solid;
+    margin: 11px 11px 11px 11px ;
+
+}
+.sh1
+{
+border: 5px solid #f00;
+}
+.sh2
+{
+    border: 5px solid;
+    border-color:  #00f  #f00;
+
+}
+.sh3
+{
+    border: 5px dashed ;
+    border-color:  #f00 #0f0 #00f #ff0;
+
+
+}

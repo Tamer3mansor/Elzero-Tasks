@@ -1,0 +1,9 @@
+div
+{
+    width: fit-content;
+    max-width: 400px;
+    background-color: brown;
+    margin-bottom: 10px;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
