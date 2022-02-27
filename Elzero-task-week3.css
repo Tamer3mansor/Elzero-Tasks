@@ -1,0 +1,138 @@
+/* first 
+body {
+    margin: 0px;
+}
+.parent
+{
+    width: 800px;
+    background-color: #eee;
+
+}
+div {
+    padding: 10px 0 10px 0;
+    text-align: center;
+    background-color: rgb(146, 192, 192);
+    float: left;
+    margin: 15px 0 15px 15px ;
+    box-sizing: content-box;
+}
+.full
+{
+    width:calc((100% - 30px));
+}
+.two
+{
+    width:calc((100% - 45px) / 2);
+}
+.three
+{
+    width:calc((100% - 60px) / 3);
+
+}
+.four
+{
+    width:calc((100% - 75px) / 4);
+
+}*/
+/* Second 
+div {
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+    background-color: hsl(0,0%,90%);
+    color: black;
+  }
+  .one
+  {
+      opacity: .7;
+  }
+  .two
+  {
+    opacity: .4;
+
+  }*/
+  /*
+  first part 2
+  div
+  {
+      width: 100px;
+      height: 100px;
+
+  }
+.black {
+    background-color: black;
+    z-index: 1;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+.blue {
+    background-color: blue;
+    z-index: 2;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.red {
+    background-color: red;
+    z-index: 4;
+    position: absolute;
+    top: 40px;
+    left: 64px;
+  }
+.green {
+    background-color: green;
+    z-index: 3;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}*/
+div
+{
+    border: 5px solid ;
+    border-color: red black;
+    padding: 50px;
+   width: 400px;
+   position: relative;
+  left:calc((100% - 400px) / 2);
+  -webkit-text-decoration: dashed;
+          text-decoration: dashed;
+}
+span
+{
+    border: 5px solid blue;
+    color:white;
+    background-color: blue;
+
+
+
+}
+.top-left {
+    border-color: blue red blue blue ;
+    position: absolute;
+    top: -9px;
+    left: -9px; 
+}
+.bottom-left
+{
+    border-color: blue red blue blue ;
+    position: absolute;
+    top: 160px;
+    left: -9px;
+}
+.top-right
+{
+    border-color: blue blue blue red ;
+    position: absolute;
+    top: -9px;
+    left: 495px;
+}
+.bottom-right
+{
+    border-color: blue blue blue red ;
+    position: absolute;
+    top: 159px;
+    left: 494px;
+}

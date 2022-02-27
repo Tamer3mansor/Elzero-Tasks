@@ -1,0 +1,18 @@
+div{
+    width: 20%;
+    height: 60px;
+    margin-bottom: 20px;
+    border: 2px solid gray;
+    text-align: center;
+    position: relative;
+   background-color: gray ;
+   opacity: .5;  
+   left: 600px;
+}
+div:empty
+{
+    border: 2px solid red;
+    background-color: red;
+
+
+}

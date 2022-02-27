@@ -1,0 +1,300 @@
+/*  first task 
+div
+{
+    width: 300px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    color: blueviolet;
+    background-color: gray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+div::after
+{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: blueviolet;
+    z-index: -1;
+    transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+}
+div::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: red;
+    transform: rotate(5deg);
+    z-index: -2;
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+}*/
+
+/*
+div
+{
+    width: 200px;
+    height: 200px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 50%;
+    position: relative;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transform: .5s;
+    -webkit-transform: .5s;
+    -moz-transform: .5s;
+    -ms-transform: .5s;
+    -o-transform: .5s;
+}
+div::before
+{
+    content: "";
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border: 10px solid;
+    border-radius: 50%;
+    border-color: #e91e63 #e91e63 #e91e63 transparent;
+    transition: .5s;
+    transition-delay: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+div::after
+{
+    content: "";
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    border: 10px solid;
+    border-radius: 50%;
+    border-color: blue transparent  blue blue;
+    transition: .5s;
+
+    
+}
+div:hover::before{
+    transform: rotate(1turn);
+    -webkit-transform: rotate(1turn);
+    -moz-transform: rotate(1turn);
+    -ms-transform: rotate(1turn);
+    -o-transform: rotate(1turn);
+}
+div:hover::after{
+    transform: rotate(1turn);
+    -webkit-transform: rotate(1turn);
+    -moz-transform: rotate(1turn);
+    -ms-transform: rotate(1turn);
+    -o-transform: rotate(1turn);
+}
+
+
+/*justify content>>يمين و شمال 
+  align item>>فوق وتحت 
+  align content>>فوق وتحت
+
+  */
+
+  /***************
+div
+{
+    width: 150px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 50px 60px;
+    background-color: #ff5722;
+    color:#eee;
+
+    
+
+}
+div::before
+{
+    content: "";
+    width: 150px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff5722;
+    position: absolute;
+    transform: skew(10deg, 10deg);
+    z-index: -2;
+}
+div::after
+{
+    content: "";
+    width: 150px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff5722;
+    position: absolute;
+    transform: skew(-10deg, -10deg);
+    -webkit-transform: skew(-10deg, -10deg);
+    -moz-transform: skew(10deg, 10deg);
+    -ms-transform: skew(10deg, 10deg);
+    -o-transform: skew(10deg, 10deg);
+    z-index: -1;
+}*/
+/*
+div
+{
+    width: 150px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 50px 60px;
+    background-color: #009688;
+    color:white;
+}
+div::before
+{    content: "";
+    left: 42px;
+    width: 66px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #009688;
+    position: absolute;
+    transform: skew(20deg, 0);
+    z-index: -1;
+}
+div::after
+{    content: "";
+    width: 10px;
+    height: 55px;
+    left: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #009688;
+    position: absolute;
+    transform: skew(-10deg, -10deg);
+    -webkit-transform: skew(20deg, 0deg);
+    -moz-transform: skew(10deg, 10deg);
+    -ms-transform: skew(10deg, 10deg);
+    -o-transform: skew(10deg, 10deg);
+    z-index: -2;
+}*/
+/*
+div
+{
+    box-sizing: border-box;
+    border-bottom: 10px solid black;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 50px 50px;
+    background-color: #607d8b;
+    color:white;
+}
+div::before
+{   content: "";
+
+    content: "";
+    border: 10px solid;
+    border-color: white white transparent transparent;
+    width: 126px;
+    height: 114px;
+    top: -15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    transform: rotate(138deg);
+    position: absolute;
+    top: ;
+    z-index: 1;
+}
+/*div::after
+{    content: "";
+    width: 10px;
+    height: 55px;
+    left: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #009688;
+    position: absolute;
+    transform: skew(-10deg, -10deg);
+    -webkit-transform: skew(20deg, 0deg);
+    -moz-transform: skew(10deg, 10deg);
+    -ms-transform: skew(10deg, 10deg);
+    -o-transform: skew(10deg, 10deg);
+    z-index: -2;
+}*/
+
+div{
+    height: 200px;
+    width: 200px;
+    margin: 20px auto;
+    position: relative;
+    font-size: 30px;
+    color: white;
+    perspective: 600px;
+    perspective-origin: left center;
+    transform-origin: left center;
+    transform-style: preserve-3d;
+    transition: 1s;
+  
+}
+div::before{
+    content: "Front";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fa3664;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div::after{
+    content: "Back";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #1692fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    -webkit-backface-visibility: hidden;
+}
+div:hover{
+    transform: rotatex(-180deg) ;
+    -webkit-transform: rotatex(-180deg) ;
+    -moz-transform: rotatex(-180deg) ;
+    -ms-transform: rotatex(-180deg) ;
+    -o-transform: rotatex(-180deg) ;
+}

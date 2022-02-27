@@ -7,3 +7,11 @@ div
     overflow:hidden;
     text-overflow: ellipsis;
 }
+a{
+    text-align: center;
+    text-decoration: none;
+    background-color: green;
+    border-bottom: 6px;
+    border-bottom-color: rgb(160, 148, 148);
+    border-bottom-style: solid;
+}

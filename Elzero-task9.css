@@ -1,0 +1,18 @@
+.task8
+{
+    width: 20%;
+    height: 60px;
+    margin-bottom: 20px;
+    border: 2px solid gray;
+    text-align: center;
+    position: relative;
+   background-color: gray ;
+}
+.task8::before
+{
+    content: "Ana feeeeen";
+    width: 100px;
+    height: 900px;
+    background-color: black;
+    border : 10px solid blueviolet; 
+}

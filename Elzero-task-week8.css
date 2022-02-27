@@ -1,0 +1,196 @@
+body
+{
+    box-sizing: content-box;
+}
+.one
+{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-top:  calc(50% - 50px);
+    margin-left: calc(50% - 50px);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border:10px solid;
+    border-color: #f62456;
+    border-left-color: transparent;
+    animation-name: spin;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.one::after
+{
+    content: "";
+    width: calc(100% + 25px);
+    height: calc(100% + 25px);
+    position: absolute;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 10px solid;
+    left: -41%;
+    top: -43%;
+    border-color: #2297ff;
+    border-right-color: transparent;
+}
+.one::before
+{    content: "";
+    width: calc(100% + 50px);
+    height: calc(100% + 50px);
+    position: absolute;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 10px solid;
+    left: -65%;
+    top: -65%;
+    border-color: #fca100;
+    border-bottom-color: transparent;
+}
+.one:hover
+{
+    animation-play-state: paused;
+}
+.two
+{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-top:  calc(50% - 50px);
+    margin-left: calc(50% - 50px);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border:10px solid;
+    border-color: #000000;
+    border-left-color: transparent;
+    animation-name: spin;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+
+}
+.two::after
+{
+    content: "";
+    width: calc(100% + 25px);
+    height: calc(100% + 25px);
+    position: absolute;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 10px solid;
+    left: -41%;
+    top: -43%;
+    border-color:  #fca100;
+    border-left-color: transparent;
+    animation-name: spin;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    animation-duration: 5s;
+
+}
+.two::before
+{    content: "";
+    width: calc(100% + 50px);
+    height: calc(100% + 50px);
+    position: absolute;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 10px solid;
+    left: -65%;
+    top: -65%;
+    border-color:  #2297ff;
+    border-left-color: transparent;
+    animation-name: spin;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    animation-duration: 10s;
+
+}
+span
+{
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-top:  calc(50% - 50px);
+    margin-left: calc(50% - 50px);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border:10px solid;
+    border-color: #000000;
+    border-left-color: transparent;
+    animation-name: spin;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    animation-direction: reverse;
+    background-color: #dfdfe6;
+    
+
+}
+
+@keyframes spin
+{
+    0%{
+      transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+}
+    50%{
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+}
+    100%
+    {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+}
+}
+.one:hover
+{
+    animation-play-state: paused;
+}
+.two:hover
+,
+.two:hover::after
+,
+.two:hover::before
+,
+span:hover
+{
+    animation-play-state: running;
+}
